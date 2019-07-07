@@ -1,0 +1,12 @@
+body {
+    background-color: black;
+    width: 100%;
+}
+
+.myClockDisplay {
+    color: deepskyblue;
+    font-family: 'Libre Barcode 39 Extended Text', cursive;
+    font-size: 100px;
+    text-align: center;
+    margin-top: 50px;
+}
