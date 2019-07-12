@@ -1,8 +1,66 @@
 #topNavbar {
-    opacity: 0.7;
+  background-color: rgba(218, 165, 32, 0.7);
   z-index: 1;
 }
 
 #landingImage {
   width: 100%;
+  min-height: 100vh;
+  background-image: url("chengdu.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: orange;
 }
+
+#imageTitle {
+  font-family: "Lobster", cursive;
+  font-size: 90px;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 5px 5px 5px black;
+  user-select: none;
+}
+
+
+/* Text animation */
+.left {
+  right: 5%;
+  text-align: right;
+}
+
+.left.trigger {
+  animation-duration: 2s;
+  animation-name: slideright;
+}
+
+@keyframes slideright {
+  from {
+    right: 20%;
+  }
+  to {
+    right: 5%;
+  }
+}
+
+.right {
+  left: 5%;
+  text-align: left;
+}
+
+.right.trigger {
+  animation-duration: 2s;
+  animation-name: slideleft;
+
+}
+
+@keyframes slideleft {
+  from {
+    left: 20%;
+  }
+  to {
+    left: 5%;
+  }
+}
+
