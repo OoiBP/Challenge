@@ -15,7 +15,7 @@ $(document).ready(function () {
         }
         else {
             $("#topNavbar a").css("color", "white");
-            $("#topNavbar").css("backgroundColor", "#232323");
+            $("#topNavbar").css("backgroundColor", "#343a40");
         }
     })
 })
