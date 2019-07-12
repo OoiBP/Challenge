@@ -1,12 +1,27 @@
+body {
+  user-select: none;
+}
+
+/* Navigation bar */
 #topNavbar {
   background-color: rgba(218, 165, 32, 0.7);
   z-index: 1;
+  font-weight: bold;
 }
 
+#topNavbar a {
+  color: black;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+/* Landing image */
 #landingImage {
   width: 100%;
   min-height: 100vh;
-  background-image: url("chengdu.jpg");
+  background-image: url("assets/chengdu.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -20,9 +35,7 @@
   font-style: italic;
   text-align: center;
   text-shadow: 5px 5px 5px black;
-  user-select: none;
 }
-
 
 /* Text animation */
 .left {
@@ -52,7 +65,6 @@
 .right.trigger {
   animation-duration: 2s;
   animation-name: slideleft;
-
 }
 
 @keyframes slideleft {
@@ -63,4 +75,3 @@
     left: 5%;
   }
 }
-

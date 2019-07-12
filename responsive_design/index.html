@@ -9,18 +9,17 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Responsive Design</title>
+    <title>Introducing China Chengdu</title>
 </head>
 
-<body class="bg-warning">
+<body class="bg-warning" data-spy="scroll" data-target="#topNavbar" data-offset="200">
     <div id="landingImage" class="d-flex justify-content-center align-items-center">
         <h1 id="imageTitle" class="text-white">Welcome to Chengdu</h1>
     </div>
 
-
     <!-- Navigation bar -->
-    <nav id="topNavbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <a class="navbar-brand" href="#">OoiBP</a>
+    <nav id="topNavbar" class="navbar navbar-expand-lg fixed-top">
+        <a class="navbar-brand" href="#">成都</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -28,24 +27,31 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#pandatower">熊猫塔</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#taikooli">太古里</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#chunxilu">春熙路</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#kuanzhai">宽窄巷</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#jinli">锦里</a>
                 </li>
             </ul>
         </div>
     </nav>
 
     <!-- Content -->
-    <div class="container mt-5">
+    <div id="contents" class="container mt-5">
 
-        <div class="row d-flex mb-3 align-items-center">
+        <div id="pandatower" class="row d-flex mb-3 align-items-center">
             <div class="col-12 col-md-6 my-2">
+                <h2 class="text-right">天府熊猫塔</h2>
                 <div class="row">
                     <div class="col-3"></div>
                     <div class="left col-9">
@@ -57,12 +63,13 @@
                 </div>
             </div>
             <div class="col-12 col-md-6 my-2">
-                <img src="chengdu.jpg" alt="" class="img-fluid">
+                <img src="assets/pandatower.jpeg" alt="" class="img-fluid">
             </div>
         </div>
 
-        <div class="row d-flex mb-3 align-items-center">
+        <div id="taikooli" class="row d-flex mb-3 align-items-center">
             <div class="col-12 col-md-6 my-2 order-md-2">
+                <h2>远洋太古里</h2>
                 <div class="row">
                     <div class="right col-9">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, sit? Eos enim vero delectus
@@ -73,12 +80,13 @@
                 </div>
             </div>
             <div class="col-12 col-md-6 my-2 order-md-0">
-                <img src="chengdu.jpg" alt="" class="img-fluid">
+                <img src="assets/taikooli.jpg" alt="" class="img-fluid">
             </div>
         </div>
 
-        <div class="row d-flex mb-3  align-items-center">
+        <div id="chunxilu" class="row d-flex mb-3  align-items-center">
             <div class="col-12 col-md-6 my-2">
+                <h2 class="text-right">春熙路</h2>
                 <div class="row">
                     <div class="col-3"></div>
                     <div class="left col-9">
@@ -90,12 +98,60 @@
                 </div>
             </div>
             <div class="col-12 col-md-6 my-2">
-                <img src="chengdu.jpg" alt="" class="img-fluid">
+                <img src="assets/chunxilu.jpg" alt="" class="img-fluid">
+            </div>
+        </div>
+
+        <div id="kuanzhai" class="row d-flex mb-3 align-items-center">
+            <div class="col-12 col-md-6 my-2 order-md-2">
+                <h2>宽窄巷子</h2>
+                <div class="row">
+                    <div class="right col-9">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, sit? Eos enim vero delectus
+                        voluptatem
+                        autem! Fuga placeat quia ducimus mollitia, consequatur nulla officia sit in voluptas a fugiat
+                        laborum.
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 my-2 order-md-0">
+                <img src="assets/kuanzhai.jpg" alt="" class="img-fluid">
+            </div>
+        </div>
+
+        <div id="jinli" class="row d-flex mb-3  align-items-center">
+            <div class="col-12 col-md-6 my-2">
+                <h2 class="text-right">锦里</h2>
+                <div class="row">
+                    <div class="col-3"></div>
+                    <div class="left col-9">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, sit? Eos enim vero delectus
+                        voluptatem
+                        autem! Fuga placeat quia ducimus mollitia, consequatur nulla officia sit in voluptas a fugiat
+                        laborum.
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 my-2">
+                <img src="assets/jinli.jpg" alt="" class="img-fluid">
             </div>
         </div>
 
     </div>
 
+    <div id="footer" class="container-fluid bg-dark p-5">
+        <div class="d-flex flex-column text-white">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+        </div>
+    </div>
 
     <!-- Boostrap script -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
